@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=0, initial-scale=1.0">
+    <title>HIMANSHU PORTFOLIO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: rgb(17, 17, 70);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(135, 135, 215);
+            font-size: 1.04rem;
+        }
+
+        main hr {
+            border: 0;
+            background: #706db4;
+            height: 1.2px;
+            margin: 60px 84px;
+        }
+
+        .left {
+            font-size: 1.5rem;
+        }
+
+        .leftsection .button {
+            padding: 50px 00;
+        }
+
+        .leftsection .btn {
+            padding: 8px;
+            background: #1e2167;
+            color: white;
+            border: 2px solid white;
+            border-radius: 6px;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: 0 0 10px #464aa9;
+            transition: 5s;
+            margin: 5px;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin: 130px 0;
+        }
+
+        .leftsection .btn a:hover {
+            color: rgb(135, 135, 215);
+            transition: ease-in;
+            font-size: 1.5rem;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 2rem;
+        }
+
+        .rightsection img {
+            margin: 50px 0;
+            width: 250px;
+            /* position: relative; */
+            /* max-width: 380px; */
+            bottom: 300px;
+
+        }
+
+        
+        .rightsection .home-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* top: -20px; */
+            width: 250px;
+            height: 250px;
+            background: #2a2b50;
+            border-radius: 50%;
+            border: 25px solid #fff;
+            overflow: hidden;
+        }
+
+        .purple {
+            color: rgb(148, 96, 197);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(156, 102, 206);
+        }
+
+        .secondsection {
+            max-width: 78vw;
+            margin: auto;
+            height: 60vh;
+        }
+
+        .secondsection h1 {
+            font-size: 1.9rem;
+        }
+
+        .secondsection .box {
+            background: white;
+            width: 78vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+        }
+
+        .image-top {
+            width: 23px;
+            position: relative;
+            top: -32px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            /* position: relative; */
+            top: 85px;
+            width: 150px;
+            font-size: 14px;
+        }
+
+        .vertical-desc {
+            /* position: relative; */
+            top: 86px;
+            color: gray;
+            width: 150px;
+            font-size: 9px;
+        }
+
+        footer {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 400;
+            background-color: #222;
+        }
+
+        .footer {
+            padding: 40px 0;
+            /* background-color: #fff; */
+
+        }
+
+        .footer .social {
+            text-align: center;
+            padding-bottom: 25px;
+            /* color: #4b4c4d; */
+
+        }
+
+        .footer .social a {
+            font-size: 24px;
+            background-color: white;
+            border: 1px solid #ccc;
+            width: 40px;
+            height: 40px;
+            line-height: 38px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+            margin: 0 8px;
+            opacity: 0.75;
+        }
+
+        .footer .social a:hover {
+            opacity: 0.99;
+            background-color: aliceblue;
+            scale: 1.2;
+        }
+
+        .footer ul {
+            margin-top: 0;
+            padding: 0;
+            list-style: none;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 0;
+            text-align: center;
+        }
+
+        .footer ul li a {
+            color: inherit;
+            text-decoration: none;
+            opacity: 0.8;
+        }
+
+        .footer ul li {
+            display: inline-block;
+            padding: 0 15px;
+            color: white;
+        }
+
+        .footer ul li a:hover {
+            opacity: 2;
+            font-size: 1.2rem;
+            color: wheat;
+        }
+
+        .footer .copyright {
+            margin-top: 15px;
+            text-align: center;
+            font-size: 13px;
+            font-weight: 900;
+            color: white;
+            opacity: 0.8;
+        }
+
+        .footer .copyright:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">Himanshu's Portfolio</div>
+            <div class="right">
+                <Ul>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="#foot">Contact Me</a></li>
+                </Ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My Name is <span class="purple">Himanshu</span>
+
+                <div>and i am a passionate </div>
+                <span id="element"></span>
+                <div class="button">
+                    <button class="btn"><a href="Himanshu Master Resume .pdf" download="Himanshu Master Resume"
+                            style="text-decoration: none; color: white;">Download Resume </a></button>
+                    <button class="btn"><a href="https://github.com/tech-himanshu"
+                            style="text-decoration: none; color: white;">Visit Github </a></button>
+                </div>
+            </div>
+            <div class="rightsection">
+                <div class="home-img">
+                    <img src="https://avatars.githubusercontent.com/u/84126721?v=4" alt="kk">
+                </div>
+            </div>
+        </section>
+
+        <hr>
+        <section id="about" class="secondsection">
+            <span class="text-gray">What I had done So far</span>
+            <h1>Work Experience</h1>
+
+            <div class="box">
+                <div class="vertical">
+                    <img class="image-top"
+                        src="html.png" alt="html">
+                    <div class="vertical-title">
+                        HTML DEVELOPER -Corporate world (2020-21)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum porro nobis ex modi quam totam,
+                        officia vitae repudiandae accusamus eaque alias exercitationem blanditiis aliquam, neque
+                        doloremque. Deserunt iure id explicabo.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="ig.png" alt="ig">
+                    <div class="vertical-title">
+                        Prompt DEVELOPER -Instgram (2020-21)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum porro nobis ex modi quam totam,
+                        officia vitae repudiandae accusamus eaque alias exercitationem blanditiis aliquam, neque
+                        doloremque. Deserunt iure id explicabo.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="fb.png" alt="fb">
+                    <div class="vertical-title">
+                        Graphic Designer -Facebook (2020-21)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum porro nobis ex modi quam totam,
+                        officia vitae repudiandae accusamus eaque alias exercitationem blanditiis aliquam, neque
+                        doloremque. Deserunt iure id explicabo.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top" src="pic2.png" alt="pic2">
+                    <div class="vertical-title">
+                        Node.js developer -Pininterest (2021-22)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum porro nobis ex modi quam totam,
+                        officia vitae repudiandae accusamus eaque alias exercitationem blanditiis aliquam, neque
+                        doloremque. Deserunt iure id explicabo.
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img class="image-top"src="img3.png" alt="pic1">
+                    <div class="vertical-title">
+                        Web DEVELOPER -Whatapp (2022-23)
+                    </div>
+                    <div class="vertical-desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum porro nobis ex modi quam totam,
+                        officia vitae repudiandae accusamus eaque alias exercitationem blanditiis aliquam, neque
+                        doloremque. Deserunt iure id explicabo.
+                    </div>
+                </div>
+                <div class="vertical"></div>
+                <div class="vertical"></div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <footer id="foot" class="footer">
+            <div class="social">
+                <a href="https://instagram.com/himanshu.shisodia_?igshid=YmMyMTA2M2Y="><i
+                        class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/himanshu-shisodia-675969178"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.snapchat.com/add/h_shisodia?share_id=RxJrHa3k2_U&locale=en-US"><i
+                        class="fa-brands fa-snapchat"></i></a>
+                <a href="https://www.facebook.com/anurag.shisodia?mibextid=ZbWKwL"><i
+                        class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://twitter.com/HShisodia?t=YKpG55RJgP270OMPWAkY2Q&s=09"><i
+                        class="fa-brands fa-twitter"></i></a>
+            </div>
+            <ul class="list">
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#resume">My Education</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+            <p class="copyright">Portfolio &copy; 2023 | Design by Himanshu</p>
+
+        </footer>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Graphic Designer', 'Video Editor', 'Web Designer', 'Youtuber.'],
+            typeSpeed: 50,
+        });
+    </script>
+
+</body>
+
+</html>
